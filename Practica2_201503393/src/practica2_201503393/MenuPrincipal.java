@@ -36,6 +36,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnmatriz.setText("Matriz Dispersa");
+        btnmatriz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnmatrizActionPerformed(evt);
+            }
+        });
 
         btnlista.setText("Lista");
 
@@ -81,6 +86,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnmatrizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmatrizActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnmatrizActionPerformed
 
     /**
      * @param args the command line arguments
