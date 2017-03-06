@@ -49,6 +49,12 @@ public class Matriz extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        txtagregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtagregarActionPerformed(evt);
+            }
+        });
+
         jButton1.setText("Agregar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,6 +137,9 @@ public class Matriz extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String nombre = txtagregar.getText();
+        char letra = nombre.charAt(0);
+        String dom = nombre.trim();
+        
         RequestBody formBody = new FormEncodingBuilder()
                 .add("dato", nombre)
                 .add("dato2", "4")
@@ -146,6 +155,10 @@ public class Matriz extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void txtagregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtagregarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtagregarActionPerformed
 
     /**
      * @param args the command line arguments
